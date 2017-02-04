@@ -1,0 +1,119 @@
+#album-art {
+	z-index: -1 !important;
+}
+
+#album-art-background {
+  	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(225, 237, 249, 0.70) 100%);
+  	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(225, 237, 249, 0.70) 100%);
+  	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(225, 237, 249, 0.70) 100%);
+  	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(225, 237, 249, 0.70) 100%);
+  	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(225, 237, 249, 0.70) 100%);
+
+  	width: 640px;
+  	height: 800px;
+  	z-index: 1 !important;
+  	position: relative;
+
+  	/*https://css-tricks.com/css3-gradients/#article-header-id-6*/
+  	background-image: 
+    repeating-linear-gradient(
+      135deg,
+      #E4F5F2,
+      #E4F5F2 1px,
+      #FFFFFF 2px,
+      #FFFFFF 4px
+    );
+}
+
+.music-info {
+	position: absolute;
+	bottom: 40px;
+	width: 100%;
+}
+
+.music-controls {
+	width: 33%;
+	float: left;
+}
+
+.music-controls i {
+	margin: 0 10px 30px;
+	
+}
+
+.music-controls i:hover {
+	color: #30DCBC;
+	cursor: pointer;
+}
+
+.music-controls .valid-control {
+	color: #1DBC9C;
+}
+
+.music-controls .invalid-control {
+	color: #BCF5EA;
+}
+
+.music-controls .invalid-control:hover {
+	color: #BCF5EA;
+	cursor: not-allowed;
+}
+
+.music-seek-container {
+	width: 66%;
+	float: right;
+	position: relative;
+}
+
+#track-info {
+	position: absolute;
+	top: 25px;
+}
+
+#track-seeker {
+	padding: 10px 0;
+	width: 350px;
+	height: 2px;
+	cursor: pointer;
+}
+
+#track-unplayed {
+	display: inherit;
+	width: inherit;
+	height: inherit;
+	background: #E3E5E5;
+	float: right;
+}
+
+#track-played {
+	display: inherit;
+	width: 0;
+	height: inherit;
+	background: #A0E6D9;
+	float: left;
+}
+
+#artist {
+	float: left;
+}
+
+#song {
+	float: center;
+	font-weight: 800;
+}
+
+#track-times {
+	clear: both;
+	position: absolute;
+	top: 20px;
+	width: 100%;
+}
+
+#duration-played {
+	float: left;
+}
+
+#duration-total {
+	float: right;
+}
+

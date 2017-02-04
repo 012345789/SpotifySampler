@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div align="center" id="album-art-wrapper">
+            <div id="album-art-background">
+                <div class="music-info">
+                    <div class="music-controls">
+                        <i id="previous" class="fa fa-2x fa-step-backward valid-control" aria-hidden="true"></i>
+                        <i id="play-pause" class="fa fa-2x fa-play valid-control" aria-hidden="true"></i>
+                        <i id="forward" class="fa fa-2x fa-step-forward valid-control" aria-hidden="true"></i>
+                    </div>
+                    <div class="music-seek-container">
+                        <span id="artist">
+                        </span>
+                        <span id="song">
+                        </span>
+                        <audio id="audio-track" preload="none">
+                            <source type="audio/mpeg" />
+                        </audio>
+                        <div id="track-info">
+                            <div id="track-seeker">
+                                <span id="track-played"></span>
+                                <span id="track-unplayed"></span>
+                            </div>
+                            <div id="track-times">
+                                <span id="duration-played"></span>
+                                <span id="duration-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vendor/api.js"></script>
+    </body>
+</html>
